@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="fr-FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Inscription </title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body>
+
+
+    <header>
+        <h2 class="logo">Balein'Rink</h2>
+        <nav class="navigation">
+            <a href="page2.html">Accueil</a>
+            <a href="chargement2.html">Billeterie</a>
+            <a href="contact2.html">Contact</a>
+            <button class="login-popup"><a href="login2.html">Login</a></button>
+        </nav>
+    </header>
+
+    <div class="box-reg">
+
+        <div class="form-box register">
+            <h2>Inscription</h2>
+
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Nom</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="accessibility-outline"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Prenom</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="email" required="@">
+                    <label>Email</label>
+                </div>
+
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Mot de passe</label>
+                </div>
+
+                <div class="remember-forgot">
+                    <label><input type="checkbox" required>J'ai lu et accepté les <a href="#">conditions d'utilisation</a></label>
+                </div>
+                <label class="optionnel"><input type="checkbox">Je souhaite recevoir les offres spéciales (Optionnel)</label>
+
+                <button type="submit" class="button">Inscription</button>
+
+                <div class="login-register">
+                    <p>Déjà un compte?
+                        <a href="login2.html" class="register-lien">Se connecter</a>
+                    </p>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

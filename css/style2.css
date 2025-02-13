@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 99;
+    background-color: rgba(33, 36, 63, 0.5);
+} 
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(images/background2.jpg);
+    background-position: center;
+}
+
+.billetterie p, .billetterie a{
+    color:rgb(43, 41, 41);
+    text-decoration: none;
+}
+
+.billetterie a {
+    text-decoration: underline;
+}
+
+.intro {
+    color: rgb(43, 41, 41);
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.horaires, .expositions, .billetterie {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.horaires h2, .expositions h2, .billetterie h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: rgb(43, 41, 41);
+}
+
+.exposition-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.exposition {
+    background: white;
+    border: 1px solid rgb(43, 41, 41);
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 300px;
+    text-align: left;
+}
+
+.exposition img {
+    width: 100%;
+}
+
+.exposition h3 {
+    font-size: 1.5rem;
+    color: rgb(43, 41, 41);
+    margin: 10px;
+}
+
+table {
+    width: 100%;
+}
+
+table, tr, th, td {
+    border: 3px solid black;
+    color: rgb(43, 41, 41);
+    font-size: x-large;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #fff;
+    user-select: none;
+}
+
+.navigation a{
+    position: relative;
+    font-size: 1.1rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    transform: scaleX(1);
+}
+
+.navigation .login-popup{
+    width: 120px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.navigation .login-popup a {
+    right: 20px;
+}
+
+.navigation .login-popup:hover {
+    background: #fff;
+    color: rgb(51, 55, 90);
+}
+
+.box-log .form-box login{
+    width: 100px;
+    padding: 40px;
+}
+
+.box-log {
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-con .form-box contact{
+    width: 100px;
+    padding: 40px;
+}
+
+.box-con {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-reg .form-box register{
+    width: 100px;
+    padding: 40px;
+}
+
+.box-reg {
+    position: relative;
+    width: 525px;
+    height: 600px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box h2{
+    font-size: 2rem;
+    color:rgb(51, 55, 90);
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid rgb(33, 36, 63);
+    margin: 30px 0;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: rgb(35, 38, 68);
+    font-weight: 500;
+    pointer-events: none;
+    transition: .3s;
+}
+
+.input-box input:focus~label, .input-box input:valid~label {
+    top: -5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size:  1rem;
+    color: rgb(33, 36, 63);
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2rem;
+    color:rgb(35, 38, 68);
+    line-height: 57px;
+}
+
+.remember-forgot {
+    font-size: .9rem;
+    color: rgb(33, 36, 63);
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot label input {
+    accent-color: rgb(33, 36, 63);
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color:rgb(31, 35, 71);
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.optionnel {
+    font-size: .9rem;
+    color: rgb(33, 36, 63);
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.optionnel input {
+    accent-color: rgb(33, 36, 63);
+    margin-right: 3px;
+}
+
+.button {
+    width: 100%;
+    height: 45px;
+    background:rgb(31, 35, 71);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.login-register {
+    font-size: .9rem;
+    color:rgb(43, 41, 41);
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.login-register p a {
+    color:rgb(43, 41, 41);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-register p a:hover {
+    text-decoration: underline;
+}
+
+.top a{
+    text-decoration: none;
+    color:#fff;
+}
+
+.theme {
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgb(43, 41, 41);
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.theme a {
+    text-decoration: none;
+    color: rgb(43, 41, 41);
+}
